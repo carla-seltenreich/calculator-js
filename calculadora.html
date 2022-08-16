@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: Verdana;
+        }
+
+        .calc-title {
+            color: white;
+            text-align: center;
+        }
+        .calc {
+            max-width: 300px;
+            padding: 15px;
+            background: #ffb3c6;
+        }
+        .calc-display {
+            padding: 15px;
+            height: 14px;
+            margin-bottom: 15px;
+            background: #fb6f92;
+            color: white;
+        }
+        .calc-btn {
+            padding: 20px;
+            background: #fb6f92;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .calc-operators {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .calc-operators .calc-btn {
+            width: 100%;
+        }
+        .calc-numbers {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .calc-numbers .calc-btn {
+            flex: 1 0 25%;
+        }
+        
+    </style>    
+</head>
+<body>
+    <div class="calc">
+        <h1 class="calc-title">CALCULADORA</h1>
+        <div class="calc-display">
+            0
+        </div>
+        <div class="calc-operators">
+            <button class="calc-btn" onclick="handleClick('/')">/</button>
+            <button class="calc-btn" onclick="handleClick('*')">*</button>
+            <button class="calc-btn" onclick="handleClick('-')">-</button>
+            <button class="calc-btn" onclick="handleClick('+')">+</button>
+        </div>
+        <div class="calc-numbers">
+            <button class="calc-btn" onclick="handleClick('9')">9</button>
+            <button class="calc-btn" onclick="handleClick('8')">8</button>
+            <button class="calc-btn" onclick="handleClick('7')">7</button>
+            <button class="calc-btn" onclick="handleClick('6')">6</button>
+            <button class="calc-btn" onclick="handleClick('5')">5</button>
+            <button class="calc-btn" onclick="handleClick('4')">4</button>
+            <button class="calc-btn" onclick="handleClick('3')">3</button>
+            <button class="calc-btn" onclick="handleClick('2')">2</button>
+            <button class="calc-btn" onclick="handleClick('1')">1</button>
+            <button class="calc-btn" onclick="handleClick('0')">0</button>
+        </div>
+        <button type="button" class="calc-btn" onclick="calc()">Calcular</button>
+        <button type="button" class="calc-btn" onclick="clean()">Limpar</button>
+    </div>
+
+    <script src="calculadora.js">
+
+    </script>
+</body>
+</html>
